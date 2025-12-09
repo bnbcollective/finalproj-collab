@@ -17,7 +17,7 @@ struct Date {
 
     int year;     // 1900-2100
 
-    double variable; 
+    
 
 };
 struct Transaction {
