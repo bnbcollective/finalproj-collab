@@ -4,6 +4,7 @@
 #include<iostream>
 #include <string>
 #include <iomanip>
+#include <cstdlib>
 
 using namespace std;
 int count=0;
@@ -176,12 +177,28 @@ cin >> newAccount.phoneNumber;
         cout << "Error. Please deposit $100.00 minimum: ";
         cin >> newAccount.balance;
     }
-    cout << "Hello";
-    cout <<"\n✓ Initial deposit accepted\nEnter Account Opening Date (DD MM YYYY): ";
-    cin >> //date entry
+
+    cout <<"\n✓ Initial deposit accepted\n";
+    int y=0;
+    while(y=0)
+     cout <<"Enter Account Opening Date (DD MM YYYY): ";
+        Date createday; 
+        string date;
+        cin >> date;//date entry
+        int scount=0;
+        for (int i=0;i<date.length();i++){
+            if(date[i]==' '&&i < 2){
+                createday.day = stoi(date.substr(scount,i-1));
+            }else if(date[i]==' '&&i<6){
+                createday.month =stoi(date.substr(scount,i-1));
+                createday.year = stoi(date.substr(i+1,date.length()));
+            }
+            
+        }
+    }
     cout << "\n\n✓ Account Created Successfully!\nAccount Number: "<<newAccount.number<<"\nAccount Type: "<<accChoice<<"\nInitial Balance: "<<newAccount.balance;<<endl;
     //get Account details here //replace this with the bool function
-   cout << "Bello";
+ 
     
          }
 
