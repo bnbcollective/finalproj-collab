@@ -176,6 +176,7 @@ cin >> newAccount.phoneNumber;
         cout << "Error. Please deposit $100.00 minimum: ";
         cin >> newAccount.balance;
     }
+    cout << "Hello";
     cout <<"\n✓ Initial deposit accepted\nEnter Account Opening Date (DD MM YYYY): ";
     cin >> //date entry
     cout << "\n\n✓ Account Created Successfully!\nAccount Number: "<<newAccount.number<<"\nAccount Type: "<<accChoice<<"\nInitial Balance: "<<newAccount.balance;<<endl;
