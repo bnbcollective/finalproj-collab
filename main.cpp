@@ -181,7 +181,7 @@ cin >> newAccount.phoneNumber;
     cin >> //date entry
     cout << "\n\n✓ Account Created Successfully!\nAccount Number: "<<newAccount.number<<"\nAccount Type: "<<accChoice<<"\nInitial Balance: "<<newAccount.balance;<<endl;
     //get Account details here //replace this with the bool function
-   
+   cout << "Bello";
     
          }
 
